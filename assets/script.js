@@ -48,9 +48,6 @@ function previousImage() {
   if (currentImage < 0) {
     currentImage = slides.length - 1
   }
-  if (currentImage === -1) {
-    currentImage = 3
-  }
   showImage()
 }
 
@@ -58,9 +55,6 @@ function previousImage() {
 function nextImage() {
   currentImage++
   if (currentImage >= slides.length) {
-    currentImage = 0
-  }
-  if (currentImage === 4) {
     currentImage = 0
   }
   showImage()
